@@ -1,0 +1,134 @@
+.projects-section {
+    position: relative;
+    padding: 50px 20px;
+    overflow: hidden;
+    color: #ECF0F1; /* Light text color */
+    background-color: #121212; /* Dark background */
+}
+
+.projects-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main_card {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.8s ease-in-out, background 0.8s ease-in-out;
+    background: #2C3E50; /* Dark blue-gray background */
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #2C3E50, #34495E); /* Subtle gradient */
+    opacity: 0.85; /* Slightly reduced opacity for more subtlety */
+    animation: northernLights 3s infinite alternate cubic-bezier(0.42, 0, 0.58, 1); /* Smooth easing */
+}
+
+.cool_card_logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.8s ease-in-out;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ECF0F1; /* Light gray text for logo */
+}
+
+.icon {
+    font-weight: bold;
+}
+
+.box {
+    position: absolute;
+    padding: 10px;
+    text-align: right;
+    background: linear-gradient(135deg, #000000, #2C3E50); /* Black gradient background */
+    border-top: 2px solid #ECF0F1; /* Light borders */
+    border-right: 1px solid #ECF0F1; /* Light borders */
+    border-radius: 10% 13% 42% 0% / 10% 12% 75% 0%;
+    transform-origin: bottom left;
+    transition: all 0.8s ease-in-out;
+}
+
+.box1 {
+    width: 85%;
+    height: 85%;
+    bottom: -85%;
+    left: -85%;
+}
+
+.box2 {
+    width: 65%;
+    height: 65%;
+    bottom: -65%;
+    left: -65%;
+    transition-delay: 0.2s;
+}
+
+.box3 {
+    width: 45%;
+    height: 45%;
+    bottom: -45%;
+    left: -45%;
+    transition-delay: 0.4s;
+}
+
+.box4 {
+    width: 25%;
+    height: 25%;
+    bottom: -25%;
+    left: -25%;
+    transition-delay: 0.6s;
+}
+
+.main_card:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #8E44AD, #9B59B6); /* Purple gradient on hover */
+}
+
+.main_card:hover .box {
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(135deg, #000000, #34495E); /* Black gradient on hover */
+}
+
+.main_card:hover .cool_card_logo {
+    transform: translate(0, 0);
+    bottom: 20px;
+    right: 20px;
+}
+
+.view-button {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #3498DB, #2980B9); /* Blue gradient button */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.view-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.view-button:hover {
+    background: #2980B9; /* Slightly darker blue on hover */
+}
+
+.logo-img {
+    width: 220px;
+    height: 220px;
+}

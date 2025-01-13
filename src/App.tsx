@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import img from '../src/img/profile.jpeg';
+import img from '../src/img/profile.jpg';
 import Contact from './elements/Contact';
 import Navbar from './elements/Navbar';
+import Projects from './Components/Project';
 
 // Scroll to top function
 const scrollToTop = (): void => {
@@ -43,37 +44,8 @@ const App: React.FC = () => {
         </div>
 
         <section className="section" id="projects">
-          <h2>Projects</h2>
-          <div className="project-list">
-            {[
-              {
-                name: 'Successor',
-                description: 'SMMA Agency',
-                link: 'https://successor.vercel.app/',
-                image: 'successor.png', // Ensure this image is available in your project
-              },
-              {
-                name: 'Moonred',
-                description: 'AI Power Tool like ChatGPT',
-                link: 'https://moonred-ai.vercel.app/',
-                image: 'moonred.png', // Ensure this image is available in your project
-              },
-              {
-                name: 'Vortex PHP Framework',
-                description: 'PHP Framework',
-                link: 'https://github.com/Root-acess/vortex-php-framework',
-                image: 'vortex-php-framework.png', // Ensure this image is available in your project
-              },
-            ].map((project, index) => (
-              <div className="project" key={index}>
-                <img src={project.image} alt={`${project.name} project`} />
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
-                  View Project
-                </a>
-              </div>
-            ))}
+          <div className="project-container">
+            <Projects />
           </div>
         </section>
 
