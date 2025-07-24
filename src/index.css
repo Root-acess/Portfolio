@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* Clip the LEFT half of the circle */
+.clip-left {
+  clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+/* Clip the RIGHT half of the circle */
+.clip-right {
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}

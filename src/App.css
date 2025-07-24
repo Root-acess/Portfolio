@@ -1,17 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Exo', sans-serif;
-    background: #000000;
-    color: #ffffff;
-    overflow-x: hidden;
-}
 
 navvv {
     width: 100%;
@@ -446,4 +433,9 @@ navvv a:hover {
 
 .project-link:hover {
     background-color: #6a73c2; /* Darker shade on hover */
+}
+
+
+.section.t-2 {
+  margin-top: 80px;
 }

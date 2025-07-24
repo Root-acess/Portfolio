@@ -3,8 +3,10 @@ import './App.css';
 import img from '../src/img/profile.jpg';
 import Contact from './elements/Contact';
 import Navbar from './elements/Navbar';
-import Projects from './Components/Project';
-
+// import Projects from './Components/Project';
+// import DevopsProject from './Components/DevopsProject';
+import Project from './Pages/Project';
+import Devlogo from './Components/Devlogo';
 // Scroll to top function
 const scrollToTop = (): void => {
   window.scrollTo({
@@ -42,11 +44,18 @@ const App: React.FC = () => {
             ))}
           </ul>
         </div>
+        <div className="divlogo">
+            <Devlogo />
+        </div>
 
-        <section className="section" id="projects">
+        <section className="section t-2" id="projects">
+          {/* <div className="project-container">
+            <DevopsProject/>
+          </div>
           <div className="project-container">
             <Projects />
-          </div>
+          </div> */}
+          <Project/>
         </section>
 
         <section className="section" id="contact">
