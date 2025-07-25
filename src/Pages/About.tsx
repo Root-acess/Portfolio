@@ -1,4 +1,4 @@
-import React from 'react';
+
 import img from '../img/profile-2.png'; // Update with your correct path
 
 const About = () => {
