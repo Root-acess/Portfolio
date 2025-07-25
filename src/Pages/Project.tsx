@@ -1,3 +1,5 @@
+import FancyButton2 from "../Components/Buttons/FancyButtons2";
+
 const logos = [
   { name: "Docker", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
   { name: "Kubernetes", url: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
@@ -52,12 +54,7 @@ const Project = () => {
 
         {/* Call to Action */}
         <div className="mt-10">
-          <a className="inline-flex justify-center items-center gap-x-3 bg-gradient-to-tr from-indigo-600 to-purple-600 hover:from-purple-700 hover:to-indigo-700 text-white text-sm font-medium rounded-full py-3 px-6 shadow-md hover:shadow-xl transition" href="#">
-            <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59..."/>
-            </svg>
-            Connect on GitHub
-          </a>
+        <FancyButton2 />
         </div>
       </div>
     </div>

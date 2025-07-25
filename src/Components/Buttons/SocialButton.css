@@ -1,0 +1,98 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+.social-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2.5em 2em;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.astro-wrapper {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 1em;
+  position: relative;
+}
+
+.astronaut {
+  width: 100%;
+  animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(0 0 15px rgba(0, 200, 255, 0.4));
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.social-heading {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.social-icons-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95em;
+}
+
+.icon i {
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+
+.icon:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.instagram:hover {
+  color: #e1306c;
+}
+
+.twitter:hover {
+  color: #1da1f2;
+}
+
+.icon-discord:hover {
+  color: #7289da;
+}
+
+.icon-discord {
+  
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1.3em;
+
+}
+.mail-text {
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
